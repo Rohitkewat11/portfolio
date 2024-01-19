@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spiner</title>
+    <style>
+        /* Loading spiner css */
+        .spiner1{
+            position:relative;
+            display: flex;
+            height:200px;
+            width:500px;
+            margin: auto;
+            border:1px black solid;
+            justify-content:center;
+            align-items:center;
+            background-color:lightcoral;
+        }
+        .circle{
+            border-top:white 40px solid;
+            border-left:transparent 40px solid;
+            border-bottom:white 40px solid;
+            border-right:transparent 40px solid;
+            border-radius: 50%;
+            margin-left:5px;
+            animation-name:spin;
+            animation-duration:0.5s;
+            animation-iteration-count:infinite;
+        }
+        @keyframes spin{
+            from{
+                transform:rotate(0deg);
+            }
+            to{
+                transform:rotate(360deg);
+            }
+        }
+        /* typing spiner css */
+        .typing{
+            position:relative;
+            display: flex;
+            height:200px;
+            width:500px;
+            margin:auto;
+            margin-top:20px;
+            border:1px black solid;
+            justify-content:center;
+            align-items:center;
+        }
+        .type{
+            height:30px;
+            width:30px;
+            border:1px red transparent;
+            border-radius:50%;
+            margin-left:10px;
+
+        }
+        #type1{
+            background-color: red;
+            animation-name:type1;
+            animation-duration:1s;
+            animation-timing-function: cubic-bezier(0.075, 0.082, 0.165, 1);
+            animation-iteration-count:infinite;
+        }
+        #type2{
+            background-color: yellow;
+            animation-name:type2;
+            animation-duration :1s;
+            animation-timing-function: cubic-bezier(0.075, 0.082, 0.165, 1);
+            animation-iteration-count:infinite;
+        }
+        #type3{
+            background-color: green;
+            animation-name:type3;
+            animation-duration :1s;
+            animation-timing-function: cubic-bezier(0.075, 0.082, 0.165, 1);
+            animation-iteration-count:infinite;
+        }
+        #type4{
+            background-color: blue;
+            animation-name:type4;
+            animation-duration: 1s;
+            animation-timing-function: cubic-bezier(0.075, 0.082, 0.165, 1);
+            animation-iteration-count:infinite;
+        }
+        @keyframes type1{
+            from{
+            transform:translatey(0px);
+        }
+        50%{
+            transform:translatey(-50px);
+        }
+        to{
+                transition: 2s;
+
+            }
+        }
+        @keyframes type2{
+            from{
+            transform:translatey(0px);
+            }
+            60%{
+            transform:translatey(-50px);
+            }
+            to{
+                transition: 2.25s;
+            }
+        }
+        @keyframes type3{
+            from{
+            transform:translatey(0px);
+            }
+            70%{
+            transform:translatey(-50px);
+            }
+            to{
+                transition: 2.50s;
+            }
+        }
+        @keyframes type4{
+            from{
+            transform:translatey(0px);
+            }
+            80%{
+            transform:translatey(-50px);
+            }
+            to{
+                transition: 2.75s;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- rounding spiner -->
+    <h1>Rounding Spiner-:</h1>
+    <div class="spiner1">
+        <div id="one" class="circle"></div>
+        <div id="two" class="circle"></div>
+        <div id="three" class="circle"></div>
+        <div id="four" class="circle"></div>
+        <div id="five" class="circle"></div>
+    </div>
+    <h1>Typing Spiner-:</h1>
+    <!-- typing spiner -->
+    <div class="typing">
+        <div class="type" id="type1"></div>
+        <div class="type" id="type2"></div>
+        <div class="type" id="type3"></div>
+        <div class="type" id="type4"></div>
+    </div>
+</body>
+</html>

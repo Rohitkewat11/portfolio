@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>youtube.com</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* margin:0; */
+            /* padding:0; */
+        }
+
+        .header-left div {
+            font-size: 31px;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+         .header-left {
+            /* margin-top: 20px; */
+            display: flex;
+        }
+
+        .header-left img {
+            margin-left: 10px;
+            margin-top:-6px;
+        }
+
+        header {
+            position:sticky;
+            top:0px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .header-center {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+
+        }
+
+        .search-box button {
+            font-size: 22px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .search-box input {
+            font-size: 22px;
+            width: 500px;
+            margin-right: -6px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-right: none;
+
+        }
+        .left-pannel{
+            /* position:fixed;
+            left:50px; */
+        }
+        .right-pannel{
+            height:600px;
+            overflow: auto;
+            
+        }
+        .bi-mic-fill {
+            font-size: 20px;
+            padding: 5px;
+            margin-left: 10px;
+
+        }
+
+        .header-right {
+            display: flex;
+            justify-content: space-around;
+            margin-right: 40px;
+
+        }
+
+        .header-right span {
+            font-size: 20px;
+            padding: 8px;
+            margin-right: 10px;
+        }
+
+        .header-right img {
+            height: 30px;
+            width: 30px;
+            border-radius: 50px;
+            margin-top: 5px;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: 0.5fr 11.5fr;
+            margin-top: 10px;
+            column-gap: 10px;
+        }
+
+        nav div {
+            margin-top: 20px;
+            font-size: 15px;
+            /* padding: 10px; */
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            /* margin-left:-10px; */
+        }
+
+        nav div p {
+            font-size: 15px;
+        }
+
+        .channel-details {
+            display: grid;
+            grid-template-columns: 2fr 6fr 4fr;
+            margin-top: 20px;
+            
+
+        }
+
+        .channel-logo {
+            text-align: right;
+            margin-right: -50px;
+        }
+
+        .channel-description {
+            margin-top: 30px;
+            margin-left: 80px;
+        }
+
+        .channel-description small {
+            color: gray;
+        }
+
+        .subscribe-btn p {
+            background-color: black;
+            font-size: 15px;
+            width: 120px;
+            color: white;
+            padding: 10px;
+            border-radius: 30px;
+            text-align: center;
+            margin-left: 200px;
+            margin-top: 50px;
+        }
+
+        .navigation-bar {
+            position: sticky;
+            top: 0px;
+            background-color: white;
+        }
+
+        .navigation-bar nav {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .nav-list {
+            border-bottom: 1px gray solid;
+        }
+
+        .nav-list div {
+            font-size: 18px;
+            color: gray;
+        }
+
+        .nav-list div:hover {
+            color: black;
+            cursor: pointer;
+        }
+
+        .demo-section {
+            display: grid;
+            grid-template-columns: 4fr 8fr;
+            column-gap: 20px;
+        }
+
+        .frame-fld iframe {
+            margin-top: 20px;
+            border-radius: 30px;
+        }
+
+        .video small {
+            color: gray;
+        }
+
+        .video p {
+            font-size: 15px;
+            line-height: 15px;
+        }
+
+        .play-list {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+
+            /* grid-template-columns: 3fr 3fr 3fr 3fr; */
+        }
+
+        .play-list iframe {
+            border-radius: 10px;
+        }
+
+        .play-list p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        
+        <div class="header-left">
+            <div class="bi bi-list"></div>
+            <img src="assest/images/youtube-logo.png" alt="" height="40" width="100">
+        </div>
+
+        <div class="header-center">
+            <div class="search-box">
+                <input type="text" placeholder="Search">
+                <button><span class="bi bi-search"></span></button>
+            </div>
+            <span class="bi bi-mic-fill"></span>
+        </div>
+        <div class="header-right">
+            <span class="bi bi-camera-reels-fill"></span>
+            <span class="bi bi-bell"></span>
+            <img src="assest/images/login-image.jpg" alt="" height="20" width="20">
+        </div>
+
+    </header>
+    <section>
+        <div class="left-pannel">
+            <nav>
+                <div class="bi bi-house-door">
+                    <p>Home</p>
+                </div>
+                <div class="bi bi-lightning-charge">
+                    <p>shorts</p>
+                </div>
+                <div class="bi bi-collection-play">
+                    <p>subscription</p>
+                </div>
+                <div class="bi bi-journals">
+                    <p>library</p>
+                </div>
+            </nav>
+        </div>
+        <div class="right-pannel">
+            <div class="banner">
+                <img src="assest/images/Channel-banner.png" alt="" width="100%">
+            </div>
+            <div class="channel-details">
+                <div class="channel-logo">
+                    <img src="assest/images/channel-logo.png" alt="">
+                </div>
+                <div class="channel-description">
+                    <big>Naresh i Technologies<big><br>
+                            <small>@Naresh IT 1.1M subscribers2.8K videos</small><br>
+                            <small>We are one of the India's largest software training organization</small>
+
+                </div>
+                <div class="subscribe-btn">
+                    <p><b>Subscribe</b></p>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="navigation-bar">
+                <nav class="nav-list">
+                    <div>HOME</div>
+                    <div>VIDEOS</div>
+                    <div>SHORTS</div>
+                    <div>LIVE</div>
+                    <div>PLAYLIST</div>
+                    <div>COMMUNITY</div>
+                    <div>CHANNELS</div>
+                    <div>ABOUT</div>
+                    <div class="bi bi-search"></div>
+                </nav>
+            </div>
+            <div class="demo-section">
+                <div class="frame-fld">
+                    <iframe src="https://www.youtube.com/embed/yBw-6rr5hbA" target="#frame-field" height="300"
+                        width="500" allowfullscreen></iframe>
+                    <!-- <iframe width="424" height="238" src="https://www.youtube.com/embed/yBw-6rr5hbA" title="Best Software Training Institute with Placements - Naresh i Technologies" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                </div>
+                <div class="video">
+                    <h5>Best Software Training Institute with Placements - Naresh i Technologies</h5>
+                    <small>168,319 views.3 years ago</small>
+                    <p>SQL Server @ 6.00 Pm : https://bit.ly/443b2J8</p>
+                    <p>Attend a Free Demo On Full Stack Data Science & AI with Chat GPT @ 10.00 AM:-
+                        https://bit.ly/42MRbgu</p>
+                    <p>Python @ 11.00 AM :- https://bit.ly/3CzQAnF</p>
+                    <p>Ui Full Stack Web DevelopMent @ 8.30 AM :- https://bit.ly/3p1VF58</p>
+                    <p>AWS @ 9.00 AM :- https://bit.ly/3JjWi0F</p>
+                    <p>Devops by Real - Time Expert @ 9.00 AM :- https://bit.ly/NITtraining</p>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <span>Videos</span> <span class="bi bi-caret-right-fill">All</span>
+            </div>
+            <div class="play-list">
+                <div>
+                    <iframe width="200" height="100" src="https://www.youtube.com/embed/vPauKLk-cn8" frameborder="0"
+                        allowfullscreen></iframe>
+                    <p>Azure devops and Azure <br>Services App Services</p>
+                </div>
+                <div>
+                    <iframe width="200" height="100" src="https://www.youtube.com/embed/_A7yBhW8Fx4" frameborder="0"
+                        allowfullscreen></iframe>
+                    <p>Logging in Spring Boot <br> Applications</p>
+                </div>
+                <div>
+                    <iframe width="200" height="100" src="https://www.youtube.com/embed/ISjsJ44ZZcU" frameborder="0"
+                        allowfullscreen></iframe>
+                    <p>It's a good choice to choose <br>Data Science for freshers</p>
+                </div>
+                <div>
+                    <iframe width="200" height="100" src="https://www.youtube.com/embed/vjWYt8bFp5E" frameborder="0"
+                        allowfullscreen></iframe>
+                    <p>Tosca Session-2 Trending <br>Automation tool Tosca</p>
+                </div>
+                <div>
+                    <iframe width="200" height="100" src="https://www.youtube.com/embed/Mv5qU18Ckjc" frameborder="0"
+                        allowfullscreen></iframe>
+                    <p>Carrer Opportunities in <br> Digital Marketing</p>
+                </div>
+            </div>
+            <hr>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem sint eos consectetur nobis incidunt,
+            unde iste fuga quibusdam repudiandae? Laudantium facilis iusto eos vel culpa suscipit porro quas quibusdam
+            molestias! Similique eius alias neque adipisci quasi accusamus veritatis dolore voluptas, a reiciendis sequi
+            officia excepturi quos impedit quia quod doloremque? Odio obcaecati a aperiam totam dolores ex laborum ab
+            laboriosam eos dolorem. Vero eos facere distinctio nihil doloremque alias ipsa perferendis animi mollitia.
+            Ab non et laborum nemo sapiente? Nobis iusto mollitia dolor nam esse, adipisci aperiam commodi nemo
+            recusandae quam suscipit autem, eligendi animi corporis magni voluptate, sint magnam natus vel! Nesciunt
+            voluptatem, aliquam quia similique dolore iste vero maiores tempora veritatis exercitationem nisi suscipit,
+            enim omnis nihil neque facere asperiores accusantium perspiciatis tenetur itaque? Voluptatibus magnam illum,
+            culpa, eligendi nisi iste fugit obcaecati blanditiis nihil suscipit quaerat quisquam doloribus explicabo
+            nulla ad, asperiores voluptate. Necessitatibus explicabo dolorem veniam commodi, placeat tempore minus animi
+            nihil nemo eligendi asperiores, quo consequatur quae tempora. Id dicta, fugit possimus fuga rerum tenetur.
+            Mollitia ratione aliquid a hic est nulla, iusto esse nemo similique quia voluptates minus optio eaque
+            commodi quis labore suscipit atque tenetur quo corrupti corporis. Dolorem provident quisquam nobis? Esse
+            repellendus corrupti sapiente aliquam ad consequuntur nobis, quas odit reiciendis veritatis eveniet cum,
+            reprehenderit, excepturi atque animi dicta minus dolore ipsa et amet in omnis doloremque. Ut libero
+            consectetur nulla hic quae eligendi saepe corporis in temporibus quisquam, accusamus doloribus voluptatibus
+            quaerat atque. Nemo consequuntur quas quia qui incidunt vitae sunt adipisci excepturi iure, quo temporibus
+            architecto quae? Ab iure possimus, dolorem illo temporibus optio repellendus beatae nostrum illum ea
+            quisquam corrupti officiis magnam architecto, dolores fugit, dignissimos velit saepe sapiente distinctio
+            exercitationem? Consequatur vero corporis ipsam ullam excepturi labore recusandae corrupti obcaecati odit
+            illum optio, facilis culpa voluptatibus temporibus dolorem eius veniam fuga voluptatem eos earum blanditiis,
+            facere totam possimus modi. Reprehenderit quo blanditiis, omnis ipsum quisquam aperiam magnam harum
+            asperiores a quia magni praesentium cumque quam, voluptatum possimus dolores eveniet. Dolorum quae ea
+            accusantium architecto, quam rerum dolore praesentium, consequatur inventore harum dignissimos ipsa
+            recusandae quaerat quo velit debitis fuga rem repellat non, magnam consequuntur fugiat veniam doloremque
+            voluptas. Quidem, at sunt. Tempora, voluptates excepturi earum ipsa fuga aliquid iste. Tenetur accusamus
+            animi assumenda, et recusandae, velit consequuntur soluta, saepe asperiores perspiciatis repudiandae facilis
+            rem. Soluta nobis fugiat quidem quos, enim facilis totam ratione laboriosam a aut. Earum consequuntur quos
+            eos cupiditate explicabo odio saepe, obcaecati distinctio assumenda molestiae cumque iure numquam sed
+            dignissimos, reprehenderit quam nisi tempore? Laudantium, ea? Eligendi aliquid adipisci quia reiciendis et?
+            Temporibus quia libero ipsa ad laudantium facilis aperiam, quis quaerat praesentium quam quod, quisquam
+            sapiente quasi omnis recusandae perspiciatis, itaque tenetur voluptatibus rerum? Ullam, eligendi. Architecto
+            esse delectus amet minima. Molestiae magni doloremque ad architecto iusto distinctio, debitis illum magnam
+            fuga exercitationem qui deleniti, vel officiis facilis laborum commodi temporibus recusandae laboriosam
+            nihil quo doloribus perspiciatis aspernatur voluptas. Repudiandae, sit odio non, unde magnam accusantium
+            voluptatum optio ipsa itaque, maxime repellat!</p>
+        </div>
+    </section>
+</body>
+
+</html>

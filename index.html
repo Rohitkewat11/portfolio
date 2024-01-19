@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en-in">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal_Portfolio</title>
+    <!-- <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"> -->
+    <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css"> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- linked CSS file...-->
+    <link rel="stylesheet" href="./portfolio.css" />
+
+    <!-- linkied javascript file...-->
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <!-- Animate css library CDN link -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <script type="text/javascript">
+      function listBtn() {
+        let list = document.getElementById("listItems");
+        list.classList.toggle("listItem");
+      }
+    </script>
+  </head>
+
+  <body>
+    
+      <a href="#header" id="navigate" class="bi bi-triangle-fill"></a>
+    
+    <header id="header">
+      <div class="animate__animated animate__backInLeft">
+        <sapn id="part-1">RK's</sapn><span id="part-2"> portfolio.</span>
+      </div>
+      <div class="listItem" id="listItems">
+        <div>
+          <a href="#home"><span style="color: red">H</span>OME</a>
+        </div>
+        <div>
+          <a href="#About"><span style="color: red">A</span>BOUT</a>
+        </div>
+        <div>
+          <a href="#Personal_Project"
+            ><span style="color: red">P</span>ERSONAL_PROJECT</a
+          >
+        </div>
+        <div>
+          <a href="#Contect-details"><span style="color: red">C</span>ONTACT</a>
+        </div>
+      </div>
+
+      <button
+        class="btn bi bi-list bg-white"
+        id="listBtn"
+        onclick="listBtn()"
+      ></button>
+    </header>
+    <section>
+      <!-- 
+                Home Section Start hear=========>
+            -->
+      <div id="home">
+        <div>
+            <div id="intro">
+                <p id="hi">Hi..</p>
+                <span id="name">I'm <span style="color: red">R</span>ohit Kewat</span>
+                <p id="whatU">And I'm a <span id="Element"></span></p>
+              </div>
+              <button id="CV_btn" class="btn">
+                <a href="./UI_FullStack_resume.pdf">Download CV</a>
+              </button>
+              <div class="social_icon">
+                <a href="#" class="icon bi bi-facebook"></a>
+                <a href="#" class="icon bi bi-twitter"></a>
+                <a href="#" class="icon bi bi-whatsapp"></a>
+                <a href="#" class="icon bi bi-instagram"></a>
+              </div>
+        </div>
+
+        <img
+          id="img"
+          src="./images/img_portfolio2-removebg-preview.png"
+          alt=""
+          height="500"
+          width="500"
+        />
+      </div>
+      <hr id="hr" />
+      <!--
+                Home section End hear==========> 
+            -->
+
+      <!--
+            About Section start hear===============>
+        -->
+      <div id="About">
+            <div id="aboutMe">
+                <p id="about">About :-</p>
+                <blockquote>
+                    I am Proficient in developing Responsive & Interactive websites | Good knowledge of<span id="skill">
+                        CSS3, HTML5, Bootstrap, JavaScript and JQuery(Ajax and Dynamic UI)</span> and also knowledge of
+                    <span id="skill-1">Node JS, Express JS and MongoDB</span> in BackEnd.
+                    And I am seeking an entry-level position where I can contribute my enthusiasm, creativity, and
+                    dedication to drive organizational growth and achieve professional development.
+                </blockquote>
+            </div>
+
+            <div id="Education">
+                <p id="education">Education :-</p>
+                <div id="education_details">
+                    <div>
+                        <div>
+                            <h3>Master Of Computer Application(MCA)</h3>
+                            <p>University :- RAJIV GANDHI PROUDYUGIKI VISWAVIDYALAYA, BHOPAL<br> Address :- Bhopal M.P.
+                                462-033</p>
+                        </div>
+                        <div>
+                            <h3>Bachelor Of Computer Application(BCA)</h3>
+                            <p>University :- MAKHANLAL CHATURVEDI NATIONAL UNIVERSITY OF<br> JOURNALISM AND
+                                COMMUNICATION, BHOPAL <br> Address :- Bhopal M.P. 462-033</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>Higher Secondary School Certificate(12<sup>th</sup>)</h3>
+                            <p>Board :- BOARD OF SECONDARY EDUCATION, BHOPAL <br> Address :- Bhopal M.P. 462-033</p>
+                        </div>
+                        <div>
+                            <h3>High Secondary School Certificate(10<sup>th</sup>)</h3>
+                            <p>Board :- BOARD OF SECONDARY EDUCATION, BHOPAL <br> Address :- Bhopal M.P. 462-033</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="Certification">
+                    <p id="certification">Certification :-</p>
+                    <div id="Certificate_details">
+                        <h4>Full Stack Web Development</h4>
+                        <p>Institute :- NARESH I TECHNOLOGIES<br>Address :- Ameerpet, Hyderabad,Telagana</p>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!--
+            About section End hear================>
+        -->
+      <hr id="hr-1" />
+      <!-- 
+            Project Section start hear===============>
+         -->
+      <div id="Personal_Project">
+            <p id="project">Personal Project :-</p>
+            <div class="project_details">
+                <div class="project">
+                    <h4>Shoper.</h4>
+                    <a href="../public/Shoper.html"><img src="./images/Shoper_site.jpg" width="300" alt=""></a>
+                    <p>Created a Home page of E-Commers Website. here i'm using HTML and CSS.</p>
+                </div>
+                <div class="project">
+                    <h4>Shoper_1.</h4>
+                    <a href="#"><img src="./images/shoper_site_1.jpg" width="300" alt=""></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio optio maiores, doloremque
+                        laboriosam atque iure rerum ullam! Debitis maiores enim alias sit nulla! Error, reiciendis.</p>
+                </div>
+                <div class="project">
+                    <h4>Flipkart.</h4>
+                    <a href="#"><img src="./images/flipkart_homePage.jpg" width="300" alt=""></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio optio maiores, doloremque
+                        laboriosam atque iure rerum ullam! Debitis maiores enim alias sit nulla! Error, reiciendis.</p>
+                </div>
+                <div class="project">
+                    <h4>Video Library.</h4>
+                    <a href="#"><img src="./images/video_library.jpg" width="300" alt=""></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio optio maiores, doloremque
+                        laboriosam atque iure rerum ullam! Debitis maiores enim alias sit nulla! Error, reiciendis.</p>
+                </div>
+            </div>
+            <div class="project_details">
+                <div class="project">
+                    <h4>To-Do List.</h4>
+                    <a href="#"><img src="./images/To-DO_list.jpg" width="300" alt=""></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio optio maiores, doloremque
+                        laboriosam atque iure rerum ullam! Debitis maiores enim alias sit nulla! Error, reiciendis.</p>
+                </div>
+                <div class="project">
+                    <h4>Youtube_channel_page.</h4>
+                    <a href="#"><img src="./images/Youtube_channel_page.jpg" width="300" alt=""></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio optio maiores, doloremque
+                        laboriosam atque iure rerum ullam! Debitis maiores enim alias sit nulla! Error, reiciendis.</p>
+                </div>
+                <div class="project">
+                    <h4>Spiners.</h4>
+                    <a href="#"><img src="./images/Spiners.jpg" width="300" alt=""></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio optio maiores, doloremque
+                        laboriosam atque iure rerum ullam! Debitis maiores enim alias sit nulla! Error, reiciendis.</p>
+                </div>
+                <div class="project">
+                    <h4>Instagram_signup.</h4>
+                    <a href="#"><img src="./images/Instagram_singupPage.jpg" width="300" alt=""></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio optio maiores, doloremque
+                        laboriosam atque iure rerum ullam! Debitis maiores enim alias sit nulla! Error, reiciendis.</p>
+                </div>
+            </div>
+        </div>
+
+      <!-- 
+            Project Section End hear==============>
+         -->
+      <hr id="hr3" />
+      <!-- 
+        Contect section start hear=================>
+     -->
+      <div>
+            <p id="Contect-details">Contect :-</p>
+
+            <div id="form-container">
+                    <form>
+                        <input name="Name" type="text" placeholder="Full Name" class="text-white form-control border border-warning border-2 bg-secondary mb-2">
+                        <input name="email" type="email" placeholder="Enter Email" class="text-white form-control border border-warning border-2 bg-secondary mb-2">
+                        <textarea name="Messages" placeholder="Messages" rows="10" class="text-white form-control border border-warning border-2 bg-secondary mb-2 rounded text-white"></textarea>
+                        <div class="d-flex justify-content-end">
+                          <button class="btn btn-success">Connect</button>
+                        </div>
+                    </form>
+            </div>
+      </div>
+
+      <!-- 
+            Contect Section End hear================>
+         -->
+    </section>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
+
+    <script>
+      var typed = new Typed("#Element", {
+        strings: [
+          "Web Developer..",
+          "FrontEnd Developer..",
+          "FullStack Developer..",
+        ],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

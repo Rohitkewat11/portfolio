@@ -1,0 +1,341 @@
+/* Root node start */
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+/* Root node End */
+
+/* header Tag Start */
+#navigate{
+    height: 50px;
+    width: 50px;
+    border: 1px yellow solid;
+    border-radius: 50%;
+    text-align:center;
+    /* align-items: center; */
+    position: fixed;
+    right: 2vw;
+    top:45%;
+    color: yellow;
+}
+.bi-triangle-fill{
+    font-size: 28px;
+}
+
+body{
+    background-color:black;
+}
+header{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 1em 0 1em 0;
+    background-color:rgb(40, 37, 37);
+}
+#part-1{
+    color:red;
+    font-size:30px;
+}
+#part-2{
+    color:white;
+    font-size:30px;
+}
+.listItem{
+    display: flex;
+}
+.listItem a{
+    text-decoration: none;
+    font-size:20px;
+    color:white;
+    margin-right:2em;
+}
+.listItem a:hover{
+    color:yellow;
+    text-shadow:
+    0 0 10px yellow,
+    0 0 20px yellow,
+    0 0 30px yellow,
+    0 0 40px yellow;
+} 
+#listBtn{
+    display: none;
+}
+/* header Tag End */
+
+/* Section Tag Start */
+#intro{
+    color:white;
+    margin-left:15em;
+    margin-top:5em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#intro #hi{
+    color:yellow;
+    font-size:50px;
+}
+#intro #Element{
+    color:yellow;
+}
+#intro #name{
+    margin-left:1.7em;
+    font-size: 40px;
+}
+#intro #whatU{
+    margin-left:2.7em;
+    font-size:25px;
+    margin-top:-10px;
+}
+#intro #name:hover {
+    text-shadow: 
+    0 0 5px yellow,
+    0 0 15px yellow,
+    0 0 25px yellow,
+    0 0 35px yellow;
+}
+#CV_btn{
+    position: relative;
+    left:19.5em;
+    top:0.5em;
+    color:black;
+    background-color: yellow;
+    font-weight: bold;    
+}
+#CV_btn a{
+    text-decoration: none;
+    color:black;
+}
+#CV_btn:hover{
+    border:1px yellow solid;
+    background-color: black;
+    color: yellow;
+}
+#CV_btn a:hover{
+    color:yellow;
+}
+.social_icon a{
+    height:200px;
+    width:200px;
+    font-size:15px;
+    color:yellow;
+    border:2px solid yellow;
+    border-radius:50%;
+    padding:12px;
+    background: transparent;
+    margin-right:15px;
+    position:relative;
+    left:20.5em;
+    top:3em;
+}
+.social_icon a:hover{
+    box-shadow: 0 0 10px yellow,
+    0 0 15px yellow;
+}
+#home{
+    display: flex;
+    justify-content:space-around;
+    column-gap: 5em;
+}
+
+#hr{
+    border-top:whitesmoke 4px solid;
+    box-shadow: 0 0 10px whitesmoke,0 0 20px whitesmoke;
+    border-radius: 30%;
+    width:80%;
+    margin:auto;
+    margin-top: 10vh;
+}
+#hr-1{
+    border-top:whitesmoke 4px solid;
+    box-shadow: 0 0 10px whitesmoke,0 0 20px whitesmoke;
+    border-radius: 30%;
+    margin:5vw 10vw 0 10vw;
+    
+}
+#hr3{
+    border-top:whitesmoke 4px solid;
+    box-shadow: 0 0 10px whitesmoke,0 0 20px whitesmoke;
+    border-radius: 30%;
+    margin:5vw 10vw 0 10vw;
+    margin-bottom: 5vh;
+}
+#About{
+    margin-top:5vh;
+}
+#About blockquote{
+    color:white;
+    margin: 0 12vw 0 14vw;
+    font-size:24px;
+    text-align:justify;
+}
+#about, #education, #certification, #project,#Contect-details{
+    color:yellow;
+    font-weight:600;
+    font-size:35px;
+    text-shadow: 0 0 10px yellow;
+    margin-left:12vw;
+}
+#About #skill,#skill-1{
+    color:yellow;
+}
+#Education,#certification,#Personal_Project{
+    margin-top:5vh;
+}
+#education_details{
+    color:white;
+    display:flex;
+    margin-left: 14vw;
+    column-gap: 10vw;
+}
+#Certificate_details{
+    color:white;
+    margin-left:14vw;
+}
+
+/* project details section ===============>*/
+.project{
+    width:310px;
+    padding:5px;
+    color:white;
+    margin-top: 2vh;
+    border:1px white solid;
+    box-shadow: 0 0 10px whitesmoke;
+}
+.project_details{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    column-gap: 2vw;
+}
+#form-container{
+    width:50%;
+    margin: auto;
+}
+
+/* Section Tag End */
+
+@media screen and (max-width:767px) {
+    /* header start */
+    header{
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        padding: 1em 0.5em 1em 0.5em;
+        background-color:rgb(40, 37, 37);
+    }
+    #listBtn{
+        display: block;
+    }
+    
+    .listItem{
+        display:none;
+    }
+
+    #listItems{
+        position:absolute;
+        top:5em;
+        right:1em;
+    }
+     #listItems a{
+        text-decoration:none;
+        font-size:20px;
+        color:white;
+    } 
+    /* header End */
+    /* Home Start */
+    
+    #intro{
+        color:white;
+        margin-left:1em;
+        margin-top:1em;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    #intro #hi{
+        color:yellow;
+        font-size:50px;
+    }
+    #intro #Element{
+        color:yellow;
+        font-size:large;
+    }
+    #intro #name{
+        margin-left:1em;
+        font-size: 40px;
+    }
+    #intro #whatU{
+        margin-left:1.5em;
+        font-size:25px;
+    }
+    #intro #name:hover {
+        text-shadow: 
+        0 0 5px yellow,
+        0 0 15px yellow,
+        0 0 25px yellow,
+        0 0 35px yellow;
+    }
+    #CV_btn{
+        left:3.5em;
+        top:0.5em;
+        color:black;
+        background-color: yellow;
+        font-weight: bold;    
+    }
+    .social_icon a{
+        left:3.2em;
+    }
+    #home{
+        display:flex; 
+         flex-direction: column;
+    }
+    #home img{
+       width:80%;
+       margin: auto;
+    }
+    #hr{
+        border-top:whitesmoke 4px solid;
+        box-shadow: 0 0 10px whitesmoke,0 0 20px whitesmoke;
+        border-radius: 30%;
+        margin-top:5vh;
+    }
+    #hr-1{
+        border-top:whitesmoke 4px solid;
+        box-shadow: 0 0 10px whitesmoke,0 0 20px whitesmoke;
+        border-radius: 30%;
+        margin-top:5vh;
+        
+    } 
+    #hr3{
+        border-top:whitesmoke 4px solid;
+        box-shadow: 0 0 10px whitesmoke,0 0 20px whitesmoke;
+        border-radius: 30%;
+        margin-top:5vh;
+
+    } 
+    #About blockquote{
+        color:white;
+        font-size:144%;
+        text-align:justify;
+    }
+    #education_details{
+        font-size:15px;
+        color:white;
+        margin-left:12vw;
+        display:grid;
+        padding-right: 8px;
+    }
+
+    .project{
+        border:1px white solid;
+        width:310px;
+        padding:5px;
+        margin-top: 1vh;
+        color:white;
+        box-shadow: 0 0 10px whitesmoke;
+    }
+    
+    #form-container{
+        width:80%;
+        margin: auto;
+    }
+    /* Home End */
+}
